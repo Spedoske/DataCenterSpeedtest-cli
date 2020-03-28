@@ -1,5 +1,4 @@
 import json, time, sys, urllib3, functools
-from contextlib import closing
 import prettytable as pt
 import eventlet
 import util
@@ -48,17 +47,28 @@ def getNewSpeed(timePrev, dataPrev, dataNow, timeNow):
     currentSpeed = prettifyUnit(downloadedData / timeGap)
     return [timeNow, dataNow, currentSpeed]
 
+
 def getValidResponse(dataCenterUrl):
-    response = http.request('GET', dataCenterUrl, preload_content=False, timeout=5.0, redirect=False)
+    response = http.request('GET',
+                            dataCenterUrl,
+                            preload_content=False,
+                            timeout=5.0,
+                            redirect=False)
     retryCount = 0
     while response.status != 200 and retryCount < downloadMaxRetryCount:
         retryCount += 1
-        print("遭遇HTTP劫持 重试中({0}/{1})".format(retryCount,downloadMaxRetryCount))
-        response = http.request('GET', dataCenterUrl, preload_content=False, timeout=5.0, redirect=False)
+        print("遭遇HTTP劫持 重试中({0}/{1})".format(retryCount,
+                                             downloadMaxRetryCount))
+        response = http.request('GET',
+                                dataCenterUrl,
+                                preload_content=False,
+                                timeout=5.0,
+                                redirect=False)
     if response.status != 200:
         print("无法从真实测速服务器上下载测试文件,跳过...")
         raise Exception(response)
     return response
+
 
 def getDataCenterSpeed(dataCenterUrl):
     dataPrev = 0
@@ -78,9 +88,12 @@ def getDataCenterSpeed(dataCenterUrl):
                 dataNow += len(data)
                 downloadProgress = (dataNow / contentSize) * 100
                 if timeNow - timePrev > 1:
-                    [timePrev, dataPrev, speedLast] = getNewSpeed(
-                        timePrev, dataPrev, dataNow, timeNow)
-                    print("\r下载进度：%d%% - %s       " % (downloadProgress,speedLast),end=" ")
+                    [timePrev, dataPrev,
+                     speedLast] = getNewSpeed(timePrev, dataPrev, dataNow,
+                                              timeNow)
+                    print("\r下载进度：%d%% - %s       " %
+                          (downloadProgress, speedLast),
+                          end=" ")
             if not data:
                 print("\r下载进度：100%% - %s       " % (speedLast), end=" ")
             print('\n')
@@ -96,20 +109,23 @@ IDCs = util.loadIDC()
 for IDC in IDCs:
     if IDC['idc'] in sys.argv or IDC['localized_idc'] in sys.argv:
         if 'localized_idc' in IDC:
-            print("正在测试:", IDC['localized_idc'])
+            localized_idc = IDC['localized_idc']
         else:
-            print("正在测试:", IDC['idc'])
+            localized_idc = IDC['idc']
+        print("正在测试:", localized_idc)
         dataCenterCount = len(IDC['prefix'][0])
         for dataCenterIndex in range(0, dataCenterCount):
             if 'localized_data_center' in IDC:
-                print("节点:", IDC['localized_data_center'][dataCenterIndex])
+                localized_data_center = IDC['localized_data_center'][
+                    dataCenterIndex]
             else:
-                print("节点:", IDC['prefix'][0][dataCenterIndex])
+                localized_data_center = IDC['prefix'][0][dataCenterIndex]
+            print("节点:", localized_data_center)
             url = util.loadUrlByArgs(IDC, dataCenterIndex)
             print("测试文件地址:", url)
             [timeSpent, dataDownload] = getDataCenterSpeed(url)
             resultArray.append([
-                IDC['idc'], IDC['prefix'][0][dataCenterIndex],
+                localized_idc, localized_data_center,
                 dataDownload / timeSpent * downloadSpeedRefreshRate,
                 util.getHostFromUrl(url)
             ])
