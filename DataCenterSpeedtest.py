@@ -11,6 +11,7 @@ eventlet.monkey_patch()
 downloadTimeout = 30  #单位:秒
 downloadChunkSize = 32768  #如果CPU占用率高,请调高此参数.
 downloadSpeedRefreshRate = 10  #速度刷新频率.如果CPU占用率高,请调低此参数.
+downloadMaxRetryCount = 20
 resultArray = []
 resultTable = pt.PrettyTable()
 resultTable.field_names = ["服务商", "节点", "速度", "节点链接"]
@@ -47,15 +48,26 @@ def getNewSpeed(timePrev, dataPrev, dataNow, timeNow):
     currentSpeed = prettifyUnit(downloadedData / timeGap)
     return [timeNow, dataNow, currentSpeed]
 
+def getValidResponse(dataCenterUrl):
+    response = http.request('GET', dataCenterUrl, preload_content=False, timeout=5.0, redirect=False)
+    retryCount = 0
+    while response.status != 200 and retryCount < downloadMaxRetryCount:
+        retryCount += 1
+        print("遭遇HTTP劫持 重试中({0}/{1})".format(retryCount,downloadMaxRetryCount))
+        response = http.request('GET', dataCenterUrl, preload_content=False, timeout=5.0, redirect=False)
+    if response.status != 200:
+        print("无法从真实测速服务器上下载测试文件,跳过...")
+        raise Exception(response)
+    return response
 
 def getDataCenterSpeed(dataCenterUrl):
     dataPrev = 0
     speedLast = "0KB/s"
     dataNow = 0
     try:
-        response = http.request('GET', dataCenterUrl, preload_content=False, timeout=5.0)
+        response = getValidResponse(dataCenterUrl)
         contentSize = int(response.headers['content-length'])
-        with eventlet.Timeout(downloadTimeout + 5):
+        with eventlet.Timeout(downloadTimeout + 2):
             timeBegin = time.time() * downloadSpeedRefreshRate
             timePrev = timeBegin
             timeNow = timeBegin
