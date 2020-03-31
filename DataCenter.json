@@ -1,245 +1,245 @@
-[
-  {
-    "argc": 2,
-    "domain": "http://speedtest.{0}.linode.com/100MB-{1}.bin",
-    "idc": "linode",
-    "localized_idc": "Linode",
-    "prefix": [
-      [
-        "newark",
-        "dallas",
-        "fremont",
-        "toronto1",
-        "frankfurt",
-        "london",
-        "singapore",
-        "tokyo2",
-        "mumbai1"
-      ],
-      [
-        "newark",
-        "dallas",
-        "fremont",
-        "toronto",
-        "frankfurt",
-        "london",
-        "singapore",
-        "tokyo2",
-        "mumbai"
-      ]
-    ],
-    "localized_data_center": [
-      "美国 新泽西州 纽瓦克",
-      "美国 德克萨斯州 达拉斯",
-      "美国 加利福尼亚州 费利蒙",
-      "加拿大 安大略省 多伦多",
-      "德国 黑森州 法兰克福",
-      "英国 伦敦",
-      "新加坡 新加坡",
-      "日本 东京都 品川区",
-      "印度 马哈拉施特拉邦 孟买"
-    ]
-  },
-  {
-    "argc": 1,
-    "domain": "http://speedtest-{0}.digitalocean.com/100mb.test",
-    "idc": "do",
-    "localized_idc": "DigitalOcean",
-    "prefix": [
-      [
-        "NYC1",
-        "NYC2",
-        "NYC3",
-        "SFO1",
-        "SFO2",
-        "TOR1",
-        "LON1",
-        "FRA1",
-        "AMS2",
-        "AMS3",
-        "SGP1",
-        "BLR1"
-      ]
-    ],
-    "localized_data_center": [
-      "美国 纽约州 纽约",
-      "美国 纽约州 纽约",
-      "美国 纽约州 纽约",
-      "美国 加利福尼亚州 旧金山",
-      "美国 加利福尼亚州 旧金山",
-      "加拿大 安大略省 多伦多",
-      "英国 伦敦",
-      "德国 黑森州 法兰克福",
-      "荷兰 北荷兰省 阿姆斯特丹",
-      "荷兰 北荷兰省 阿姆斯特丹",
-      "新加坡 新加坡",
-      "印度 卡纳塔克邦 班加罗尔"
-    ]
-  },
-  {
-    "argc": 1,
-    "domain": "http://{0}-ec2.cloudharmony.net/probe/test100mb.bin",
-    "idc": "aws",
-    "localized_idc": "Amazon Web Services",
-    "prefix": [
-      [
-        "us-east-1",
-        "us-east-2a",
-        "us-east-2b",
-        "us-west-1",
-        "us-west-2",
-        "eu-north-1",
-        "ca-central-1",
-        "eu-central-1",
-        "eu-west-1",
-        "eu-west-2",
-        "eu-west-3",
-        "eu-north-1",
-        "ap-east-1",
-        "ap-northeast-1",
-        "ap-northeast-2",
-        "ap-south-1",
-        "ap-southeast-1",
-        "ap-southeast-2",
-        "sa-east-1",
-        "me-south-1"
-      ]
-    ],
-    "localized_data_center": [
-      "美国 弗吉尼亚州 阿什本",
-      "美国 俄亥俄州 都柏林",
-      "美国 俄亥俄州 都柏林",
-      "美国 加利福尼亚州 旧金山",
-      "美国 俄勒冈州 波特兰",
-      "瑞典 斯德哥尔摩省 斯德哥尔摩",
-      "加拿大 魁北克省 蒙特利尔",
-      "德国 黑森州 法兰克福",
-      "爱尔兰 都柏林郡 都柏林",
-      "英国 伦敦",
-      "法国 法兰西岛大区 巴黎",
-      "瑞典 斯德哥尔摩省 斯德哥尔摩",
-      "中国 香港",
-      "日本 东京都 东京",
-      "韩国 首尔",
-      "印度 马哈拉施特拉邦 孟买",
-      "新加坡 新加坡",
-      "澳大利亚 新南威尔士州 悉尼",
-      "巴西 巴西",
-      "巴林 巴林"
-    ]
-  },
-  {
-    "argc": 1,
-    "domain": "http://{0}-gce.cloudharmony.net/probe/test100mb.bin",
-    "idc": "gcp",
-    "localized_idc": "Google Cloud Platform",
-    "prefix": [
-      [
-        "us-east1",
-        "us-east4",
-        "us-west1",
-        "us-west2-a",
-        "us-central1",
-        "northamerica-northeast1",
-        "asia-east1",
-        "asia-east2",
-        "asia-northeast1",
-        "asia-northeast2",
-        "asia-south1",
-        "asia-southeast1",
-        "australia-southeast1",
-        "europe-north1",
-        "europe-west1",
-        "europe-west2",
-        "europe-west3",
-        "europe-west4",
-        "europe-west6",
-        "southamerica-east1"
-      ]
-    ],
-    "localized_data_center": [
-      "美国 南卡罗来纳州 蒙克斯科纳",
-      "美国 弗吉尼亚州 阿什本",
-      "美国 俄勒冈州 达尔斯",
-      "美国 加利福尼亚州 洛杉矶",
-      "美国 爱荷华州 康瑟尔布拉夫斯",
-      "加拿大 魁北克省 蒙特利尔",
-      "中国 台湾 彰化县",
-      "中国 香港",
-      "日本 东京都 东京",
-      "日本 大阪府 大阪",
-      "印度 马哈拉施特拉邦 孟买",
-      "新加坡 新加坡",
-      "澳大利亚 新南威尔士州 悉尼",
-      "芬兰 屈米河谷区 哈米纳",
-      "比利时 瓦隆大区 圣吉斯兰",
-      "英国 伦敦",
-      "德国 黑森州 法兰克福",
-      "荷兰 格罗宁根省 埃姆斯哈文",
-      "瑞士 苏黎世州 苏黎世",
-      "巴西 巴西"
-    ]
-  },
-  {
-    "argc": 1,
-    "domain": "http://{0}-ping.vultr.com/vultr.com.100MB.bin",
-    "idc": "vultr",
-    "localized_idc": "Vultr",
-    "prefix": [
-      [
-        "NJ-US",
-        "IL-US",
-        "GA-US",
-        "FL-US",
-        "TX-US",
-        "SJO-CA-US",
-        "WA-US",
-        "TOR-CA",
-        "FRA-DE",
-        "AMS-NL",
-        "PAR-FR",
-        "LON-GB",
-        "SYD-AU",
-        "SGP",
-        "HND-JP"
-      ]
-    ],
-    "localized_data_center": [
-      "美国 新泽西州 皮斯卡特维",
-      "美国 伊利诺伊州 芝加哥",
-      "美国 乔治亚州 亚特兰大",
-      "美国 佛罗里达州 迈阿密",
-      "美国 德克萨斯州 达拉斯",
-      "美国 加利福尼亚州 圣何塞",
-      "美国 华盛顿州 西雅图",
-      "加拿大 安大略省 多伦多",
-      "德国 黑森州 法兰克福",
-      "荷兰 北荷兰省 阿姆斯特丹",
-      "法国 法兰西岛大区 巴黎",
-      "英国 伦敦",
-      "澳大利亚 新南威尔士州 悉尼",
-      "新加坡 新加坡",
-      "日本 东京都 东京"
-    ]
-  },
-  {
-    "argc": 1,
-    "domain": "http://lg{0}.nexusbytes.com/1000mb.test.zip",
-    "idc": "nexusbytes",
-    "localized_idc": "Nexus Bytes",
-    "prefix": [
-      [
-        "ny",
-        "mi",
-        "la",
-        "ger"
-      ]
-    ],
-    "localized_data_center": [
-      "美国 新泽西州 皮斯卡特维",
-      "美国 佛罗里达州 迈阿密",
-      "美国 加利福尼亚州 洛杉矶",
-      "德国 巴伐利亚州 纽伦堡"
-    ]
-  }
-]
+{
+    "aws": {
+        "argc": 1, 
+        "domain": "http://{0}-ec2.cloudharmony.net/probe/test100mb.bin", 
+        "idc": "aws", 
+        "localized_data_center": [
+            "美国 弗吉尼亚州 阿什本", 
+            "美国 俄亥俄州 都柏林", 
+            "美国 俄亥俄州 都柏林", 
+            "美国 加利福尼亚州 旧金山", 
+            "美国 俄勒冈州 波特兰", 
+            "瑞典 斯德哥尔摩省 斯德哥尔摩", 
+            "加拿大 魁北克省 蒙特利尔", 
+            "德国 黑森州 法兰克福", 
+            "爱尔兰 都柏林郡 都柏林", 
+            "英国 伦敦", 
+            "法国 法兰西岛大区 巴黎", 
+            "瑞典 斯德哥尔摩省 斯德哥尔摩", 
+            "中国 香港", 
+            "日本 东京都 东京", 
+            "韩国 首尔", 
+            "印度 马哈拉施特拉邦 孟买", 
+            "新加坡 新加坡", 
+            "澳大利亚 新南威尔士州 悉尼", 
+            "巴西 巴西", 
+            "巴林 巴林"
+        ], 
+        "localized_idc": "Amazon Web Services", 
+        "prefix": [
+            [
+                "us-east-1", 
+                "us-east-2a", 
+                "us-east-2b", 
+                "us-west-1", 
+                "us-west-2", 
+                "eu-north-1", 
+                "ca-central-1", 
+                "eu-central-1", 
+                "eu-west-1", 
+                "eu-west-2", 
+                "eu-west-3", 
+                "eu-north-1", 
+                "ap-east-1", 
+                "ap-northeast-1", 
+                "ap-northeast-2", 
+                "ap-south-1", 
+                "ap-southeast-1", 
+                "ap-southeast-2", 
+                "sa-east-1", 
+                "me-south-1"
+            ]
+        ]
+    }, 
+    "do": {
+        "argc": 1, 
+        "domain": "http://speedtest-{0}.digitalocean.com/100mb.test", 
+        "idc": "do", 
+        "localized_data_center": [
+            "美国 纽约州 纽约", 
+            "美国 纽约州 纽约", 
+            "美国 纽约州 纽约", 
+            "美国 加利福尼亚州 旧金山", 
+            "美国 加利福尼亚州 旧金山", 
+            "加拿大 安大略省 多伦多", 
+            "英国 伦敦", 
+            "德国 黑森州 法兰克福", 
+            "荷兰 北荷兰省 阿姆斯特丹", 
+            "荷兰 北荷兰省 阿姆斯特丹", 
+            "新加坡 新加坡", 
+            "印度 卡纳塔克邦 班加罗尔"
+        ], 
+        "localized_idc": "DigitalOcean", 
+        "prefix": [
+            [
+                "NYC1", 
+                "NYC2", 
+                "NYC3", 
+                "SFO1", 
+                "SFO2", 
+                "TOR1", 
+                "LON1", 
+                "FRA1", 
+                "AMS2", 
+                "AMS3", 
+                "SGP1", 
+                "BLR1"
+            ]
+        ]
+    }, 
+    "gcp": {
+        "argc": 1, 
+        "domain": "http://{0}-gce.cloudharmony.net/probe/test100mb.bin", 
+        "idc": "gcp", 
+        "localized_data_center": [
+            "美国 南卡罗来纳州 蒙克斯科纳", 
+            "美国 弗吉尼亚州 阿什本", 
+            "美国 俄勒冈州 达尔斯", 
+            "美国 加利福尼亚州 洛杉矶", 
+            "美国 爱荷华州 康瑟尔布拉夫斯", 
+            "加拿大 魁北克省 蒙特利尔", 
+            "中国 台湾 彰化县", 
+            "中国 香港", 
+            "日本 东京都 东京", 
+            "日本 大阪府 大阪", 
+            "印度 马哈拉施特拉邦 孟买", 
+            "新加坡 新加坡", 
+            "澳大利亚 新南威尔士州 悉尼", 
+            "芬兰 屈米河谷区 哈米纳", 
+            "比利时 瓦隆大区 圣吉斯兰", 
+            "英国 伦敦", 
+            "德国 黑森州 法兰克福", 
+            "荷兰 格罗宁根省 埃姆斯哈文", 
+            "瑞士 苏黎世州 苏黎世", 
+            "巴西 巴西"
+        ], 
+        "localized_idc": "Google Cloud Platform", 
+        "prefix": [
+            [
+                "us-east1", 
+                "us-east4", 
+                "us-west1", 
+                "us-west2-a", 
+                "us-central1", 
+                "northamerica-northeast1", 
+                "asia-east1", 
+                "asia-east2", 
+                "asia-northeast1", 
+                "asia-northeast2", 
+                "asia-south1", 
+                "asia-southeast1", 
+                "australia-southeast1", 
+                "europe-north1", 
+                "europe-west1", 
+                "europe-west2", 
+                "europe-west3", 
+                "europe-west4", 
+                "europe-west6", 
+                "southamerica-east1"
+            ]
+        ]
+    }, 
+    "linode": {
+        "argc": 2, 
+        "domain": "http://speedtest.{0}.linode.com/100MB-{1}.bin", 
+        "idc": "linode", 
+        "localized_data_center": [
+            "美国 新泽西州 纽瓦克", 
+            "美国 德克萨斯州 达拉斯", 
+            "美国 加利福尼亚州 费利蒙", 
+            "加拿大 安大略省 多伦多", 
+            "德国 黑森州 法兰克福", 
+            "英国 伦敦", 
+            "新加坡 新加坡", 
+            "日本 东京都 品川区", 
+            "印度 马哈拉施特拉邦 孟买"
+        ], 
+        "localized_idc": "Linode", 
+        "prefix": [
+            [
+                "newark", 
+                "dallas", 
+                "fremont", 
+                "toronto1", 
+                "frankfurt", 
+                "london", 
+                "singapore", 
+                "tokyo2", 
+                "mumbai1"
+            ], 
+            [
+                "newark", 
+                "dallas", 
+                "fremont", 
+                "toronto", 
+                "frankfurt", 
+                "london", 
+                "singapore", 
+                "tokyo2", 
+                "mumbai"
+            ]
+        ]
+    }, 
+    "nexusbytes": {
+        "argc": 1, 
+        "domain": "http://lg{0}.nexusbytes.com/1000mb.test.zip", 
+        "idc": "nexusbytes", 
+        "localized_data_center": [
+            "美国 新泽西州 皮斯卡特维", 
+            "美国 佛罗里达州 迈阿密", 
+            "美国 加利福尼亚州 洛杉矶", 
+            "德国 巴伐利亚州 纽伦堡"
+        ], 
+        "localized_idc": "Nexus Bytes", 
+        "prefix": [
+            [
+                "ny", 
+                "mi", 
+                "la", 
+                "ger"
+            ]
+        ]
+    }, 
+    "vultr": {
+        "argc": 1, 
+        "domain": "http://{0}-ping.vultr.com/vultr.com.100MB.bin", 
+        "idc": "vultr", 
+        "localized_data_center": [
+            "美国 新泽西州 皮斯卡特维", 
+            "美国 伊利诺伊州 芝加哥", 
+            "美国 乔治亚州 亚特兰大", 
+            "美国 佛罗里达州 迈阿密", 
+            "美国 德克萨斯州 达拉斯", 
+            "美国 加利福尼亚州 圣何塞", 
+            "美国 华盛顿州 西雅图", 
+            "加拿大 安大略省 多伦多", 
+            "德国 黑森州 法兰克福", 
+            "荷兰 北荷兰省 阿姆斯特丹", 
+            "法国 法兰西岛大区 巴黎", 
+            "英国 伦敦", 
+            "澳大利亚 新南威尔士州 悉尼", 
+            "新加坡 新加坡", 
+            "日本 东京都 东京"
+        ], 
+        "localized_idc": "Vultr", 
+        "prefix": [
+            [
+                "NJ-US", 
+                "IL-US", 
+                "GA-US", 
+                "FL-US", 
+                "TX-US", 
+                "SJO-CA-US", 
+                "WA-US", 
+                "TOR-CA", 
+                "FRA-DE", 
+                "AMS-NL", 
+                "PAR-FR", 
+                "LON-GB", 
+                "SYD-AU", 
+                "SGP", 
+                "HND-JP"
+            ]
+        ]
+    }
+}

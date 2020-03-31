@@ -1,5 +1,4 @@
-import json, time, sys, urllib3, functools
-import prettytable as pt
+import time, urllib3
 import eventlet
 import util
 
@@ -10,41 +9,15 @@ eventlet.monkey_patch()
 downloadTimeout = 30  #单位:秒
 downloadChunkSize = 32768  #如果CPU占用率高,请调高此参数.
 downloadSpeedRefreshRate = 10  #速度刷新频率.如果CPU占用率高,请调低此参数.
-downloadMaxRetryCount = 20
-resultArray = []
-resultTable = pt.PrettyTable()
-resultTable.field_names = ["服务商", "节点", "速度", "节点链接"]
-unit = ["KB/s", "MB/s", "GB/s"]
+downloadMaxRetryCount = 20  #运营商劫持重试次数
+
 http = urllib3.PoolManager()
-
-
-def compareResultObject(x, y):
-    if x[2] > y[2]:
-        return 1
-    elif x[2] < y[2]:
-        return -1
-    elif x[0] < y[0]:
-        return 1
-    elif x[0] > y[0]:
-        return -1
-    elif x[1] < y[1]:
-        return 1
-    return -1
-
-
-def prettifyUnit(speedFloat):
-    speedFloat /= 1024
-    step = 0
-    while speedFloat > 1024 and step < 2:
-        speedFloat /= 1024
-        step += 1
-    return str(round(speedFloat, 2)) + unit[step]
 
 
 def getNewSpeed(timePrev, dataPrev, dataNow, timeNow):
     timeGap = (timeNow - timePrev) / downloadSpeedRefreshRate
     downloadedData = dataNow - dataPrev
-    currentSpeed = prettifyUnit(downloadedData / timeGap)
+    currentSpeed = util.prettifyUnit(downloadedData / timeGap)
     return [timeNow, dataNow, currentSpeed]
 
 
@@ -104,34 +77,19 @@ def getDataCenterSpeed(dataCenterUrl):
     return [downloadTimeout * downloadSpeedRefreshRate, dataNow]
 
 
-IDCs = util.loadIDC()
-
-for IDC in IDCs:
-    if IDC['idc'] in sys.argv or IDC['localized_idc'] in sys.argv:
-        if 'localized_idc' in IDC:
-            localized_idc = IDC['localized_idc']
-        else:
-            localized_idc = IDC['idc']
-        print("正在测试:", localized_idc)
-        dataCenterCount = len(IDC['prefix'][0])
-        for dataCenterIndex in range(0, dataCenterCount):
-            if 'localized_data_center' in IDC:
-                localized_data_center = IDC['localized_data_center'][
-                    dataCenterIndex]
-            else:
-                localized_data_center = IDC['prefix'][0][dataCenterIndex]
-            print("节点:", localized_data_center)
-            url = util.loadUrlByArgs(IDC, dataCenterIndex)
-            print("测试文件地址:", url)
-            [timeSpent, dataDownload] = getDataCenterSpeed(url)
-            resultArray.append([
-                localized_idc, localized_data_center,
-                dataDownload / timeSpent * downloadSpeedRefreshRate,
-                util.getHostFromUrl(url)
-            ])
-resultArray.sort(key=functools.cmp_to_key(compareResultObject), reverse=True)
-for row in resultArray:
-    row[2] = prettifyUnit(row[2])
-    resultTable.add_row(row)
-print("\n\n\n\n\n")
-print(resultTable)
+def measureDownloadSpeed(IDC, dataCenterIndex, resultArray, speedtestIndex,
+                         searchListCount):
+    localized_idc = util.getLocalizedIDC(IDC)
+    localized_data_center = util.getLocalizedDataCenterArray(
+        IDC)[dataCenterIndex]
+    print(
+        "节点:", localized_idc + " " + localized_data_center +
+        "({0}/{1})".format(speedtestIndex + 1, searchListCount))
+    url = util.loadUrlByArgs(IDC, dataCenterIndex)
+    print("测试文件地址:", url)
+    [timeSpent, dataDownload] = getDataCenterSpeed(url)
+    resultArray.append([
+        localized_idc, localized_data_center,
+        dataDownload / timeSpent * downloadSpeedRefreshRate,
+        util.getHostFromUrl(url)
+    ])
