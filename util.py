@@ -14,7 +14,7 @@ def getIPFromHost(host):
 
 
 def loadIDC():
-    with open('DataCenter.json', 'r') as loadedJson:
+    with open('DataCenter.json', 'r', encoding='UTF-8') as loadedJson:
         return json.load(loadedJson)
     return {}
 
@@ -27,7 +27,7 @@ def saveIDC(dataCenter):
 def loadUrlByArgs(IDC, dataCenterIndex):
     args = []
     #向参数列表中添加参数.
-    for argIndex in range(0, IDC['agrc']):
+    for argIndex in range(0, IDC['argc']):
         args.append(IDC['prefix'][argIndex][dataCenterIndex])
     #返回填充参数完毕后的url.
     return IDC['domain'].format(*args)

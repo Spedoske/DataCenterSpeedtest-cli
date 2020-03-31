@@ -19,7 +19,7 @@ for IDC in IDCs:
         #开始遍历数据中心.
         for dataCenterIndex in range(0, dataCenterCount):
             url = util.loadUrlByArgs(IDC, dataCenterIndex)
-            ip = util.getIPFromHost(getHost(url))
+            ip = util.getIPFromHost(util.getHostFromUrl(url))
             unlocalizedName = IDC['prefix'][0][dataCenterIndex].strip()
             if ip:
                 #IP解析成功,调用IPIP免费API.
