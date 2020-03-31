@@ -3,8 +3,7 @@
 ## 特点
 + 测试与多个数据中心的下载速度(Linode,DigitalOcean等)
 + 灵活的配置文件,可自行添加数据中心测速链接
-+ 支持将数据中心地址导入[SmartPing](https://github.com/smartping/smartping)
-
++ 支持筛选操作,可筛选节点进行测速
 ## 输出示例
 
 | 服务商 |            节点            |    速度    |         节点链接         |
@@ -26,39 +25,7 @@
 | Vultr  | 澳大利亚 新南威尔士州 悉尼 | 29.52KB/s  |  SYD-AU-ping.vultr.com   |
 
 ## 安装
-### 依赖
-+ Python3
-+ requests
-+ prettytable
-+ eventlet
-+ urllib3
-## 使用
-### dataCenterSpeedtest.py
-dataCenterSpeedtest.py 允许你测试本机与数据中心之间的速度。您可运行:
-```
-python3 dataCenterSpeedtest.py vultr Linode
-```
-来测试本机到vultr和linode节点的速度.
-您可输入在`DataCenter.json`中任意IDC的名称或本地化名称作为参数,例如，您想测试本地到DigitalOcean的速度,则可输入:
-```
-python3 dataCenterSpeedtest.py DigitalOcean
-```
-或
-```
-python3 dataCenterSpeedtest.py do
-```
-注意:类似于`Amazon Web Services`的含有空格的IDC本地化名称无法作为参数输入,因为它会被分解为`Amazon`,`Web`和`Services`.
-### updateSmartPing.py
-updateSmartPing.py 允许您把数据中心节点添加到[SmartPing](https://github.com/smartping/smartping)中。您可运行:
-```
-python3 dataCenterSpeedtest.py DigitalOcean
-```
-将DigitalOcean的所有测试节点添加到[SmartPing](https://github.com/smartping/smartping)中。添加多个测试节点的方法与dataCenterSpeedtest.py的使用方法相同.
-### generateLocalizedDataCenterName.py
-执行generateLocalizedDataCenterName.py将调用免费IPIP的API生成节点中文名称.
-### DataCenter.json
-此文件包含了所有节点信息.
-
+[DataCenterSpeedtest-cli Wiki](https://github.com/Spedoske/DataCenterSpeedtest-cli/wiki/%E6%96%B0%E6%89%8B%E4%B8%8A%E8%B7%AF)
 ## 添加节点信息
 节点信息储存在DataCenter.json中，字段意义如下.
 | 字段  | 含义  |
