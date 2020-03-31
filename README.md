@@ -24,14 +24,5 @@
 | Vultr  |         英国 伦敦          | 49.11KB/s  |  LON-GB-ping.vultr.com   |
 | Vultr  | 澳大利亚 新南威尔士州 悉尼 | 29.52KB/s  |  SYD-AU-ping.vultr.com   |
 
-## 安装
+## 安装及使用
 [DataCenterSpeedtest-cli Wiki](https://github.com/Spedoske/DataCenterSpeedtest-cli/wiki/%E6%96%B0%E6%89%8B%E4%B8%8A%E8%B7%AF)
-## 添加节点信息
-节点信息储存在DataCenter.json中，字段意义如下.
-| 字段  | 含义  |
-|--------|----------------------------|
-| idc | 服务商的名称(缩写,便于命令输入)  |
-|  localized_idc | 服务商的全称(作为输出,中文英文均可)   |
-| domain  |  下载文件的地址(可插入{0},{1},{2}...的参数)  |
-| agrc  |  参数数量 |
-|  prefix |  参数数组 |
