@@ -72,10 +72,10 @@ def getDataCenterSpeed(dataCenterUrl):
             print('\n')
             return [timeNow - timeBegin, dataNow]
     except Timeout as t:
-        pass
-	except Exception as e:
-		print('\n')
-		print(e)
+        print("超时,测试下一个数据中心.")
+    except Exception as e:
+        print('\n')
+        print(e)
     print('\n')
     return [downloadTimeout * downloadSpeedRefreshRate, dataNow]
 
