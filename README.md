@@ -1,5 +1,7 @@
 # 数据中心测速
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/682a38e8cd644185b4a672c1a6556d6b)](https://app.codacy.com/manual/leomundspedoske/DataCenterSpeedtest-cli?utm_source=github.com&utm_medium=referral&utm_content=Spedoske/DataCenterSpeedtest-cli&utm_campaign=Badge_Grade_Dashboard)
+
 ## 特点
 
 -   测试与多个数据中心的下载速度(Linode,DigitalOcean等)
