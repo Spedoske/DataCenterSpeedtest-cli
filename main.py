@@ -1,4 +1,4 @@
-﻿import argparse, json, util, dataCenterSpeedtest, functools
+﻿import argparse, util, dataCenterSpeedtest, functools
 import prettytable as pt
 
 IDCs = util.loadIDC()

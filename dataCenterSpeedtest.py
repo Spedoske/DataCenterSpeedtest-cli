@@ -71,8 +71,11 @@ def getDataCenterSpeed(dataCenterUrl):
                 print("\r下载进度：100%% - %s       " % (speedLast), end=" ")
             print('\n')
             return [timeNow - timeBegin, dataNow]
-    except:
+    except Timeout as t:
         pass
+	except Exception as e:
+		print('\n')
+		print(e)
     print('\n')
     return [downloadTimeout * downloadSpeedRefreshRate, dataNow]
 
