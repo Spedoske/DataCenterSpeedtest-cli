@@ -71,7 +71,7 @@ def getDataCenterSpeed(dataCenterUrl):
                 print("\r下载进度：100%% - %s       " % (speedLast), end=" ")
             print('\n')
             return [timeNow - timeBegin, dataNow]
-    except Timeout:
+    except eventlet.Timeout:
         print('\n')
         print("超时,测试下一个数据中心.")
     except Exception as e:
