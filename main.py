@@ -1,4 +1,8 @@
-﻿import argparse, util, dataCenterSpeedtest, functools
+﻿import eventlet
+
+eventlet.monkey_patch()
+
+import argparse, util, dataCenterSpeedtest, functools
 import prettytable as pt
 
 IDCs = util.loadIDC()

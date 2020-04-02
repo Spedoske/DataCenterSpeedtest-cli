@@ -2,8 +2,6 @@ import time, urllib3
 import eventlet
 import util
 
-eventlet.monkey_patch()
-
 # linode 亚特兰大测试点好像挂了,删除测试连接.
 
 downloadTimeout = 30  #单位:秒
@@ -11,6 +9,7 @@ downloadChunkSize = 32768  #如果CPU占用率高,请调高此参数.
 downloadSpeedRefreshRate = 10  #速度刷新频率.如果CPU占用率高,请调低此参数.
 downloadMaxRetryCount = 20  #运营商劫持重试次数
 
+urllib3.disable_warnings()
 http = urllib3.PoolManager()
 
 
