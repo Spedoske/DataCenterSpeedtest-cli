@@ -157,6 +157,80 @@
             ]
         ]
     }, 
+    "hosthatch": {
+        "argc": 1, 
+        "domain": "{0}", 
+        "idc": "hosthatch", 
+        "localized_data_center": [
+            "荷兰 北荷兰省 阿姆斯特丹", 
+            "瑞典 斯德哥尔摩省 斯德哥尔摩", 
+            "美国 加利福尼亚州 圣何塞", 
+            "美国 新泽西州 锡考克斯", 
+            "奥地利 维也纳州 维也纳", 
+            "挪威 奥斯陆郡 奥斯陆", 
+            "美国 伊利诺伊州 芝加哥", 
+            "澳大利亚 新南威尔士州 悉尼", 
+            "中国 香港"
+        ], 
+        "localized_idc": "HostHatch", 
+        "prefix": [
+            [
+                "http://lg.ams.hosthatch.com/100MB.test", 
+                "http://lg.sto.hosthatch.com/100MB.test", 
+                "http://lg.lax.hosthatch.com/100MB.test", 
+                "http://lg.ny.hosthatch.com/100MB.test", 
+                "http://lg.vie.hosthatch.com/100MB.test", 
+                "http://lg.osl.hosthatch.com/100MB.test", 
+                "http://172.107.196.100/200MB.test", 
+                "http://168.1.1.212/downloads/test100.zip", 
+                "http://speedtest.hkg02.softlayer.com/downloads/test100.zip"
+            ]
+        ]
+    }, 
+    "hostus": {
+        "argc": 1, 
+        "domain": "http://{0}-lg.hostus.us/100MB.test", 
+        "idc": "hostus", 
+        "localized_data_center": [
+            "荷兰 北荷兰省 阿姆斯特丹", 
+            "英国 伦敦", 
+            "美国 北卡罗来纳州 夏洛特", 
+            "美国 乔治亚州 亚特兰大", 
+            "美国 德克萨斯州 达拉斯", 
+            "美国 加利福尼亚州 洛杉矶", 
+            "美国 弗吉尼亚州 阿什本"
+        ], 
+        "localized_idc": "HostUS", 
+        "prefix": [
+            [
+                "ams", 
+                "lon", 
+                "clt", 
+                "atl", 
+                "dal", 
+                "la", 
+                "wdc"
+            ]
+        ]
+    }, 
+    "hostus-softlayer": {
+        "argc": 1, 
+        "domain": "http://speedtest.{0}.softlayer.com/downloads/test100.zip", 
+        "idc": "hostus-softlayer", 
+        "localized_data_center": [
+            "中国 香港", 
+            "新加坡 新加坡", 
+            "澳大利亚 新南威尔士州 悉尼"
+        ], 
+        "localized_idc": "HostUS(Softlayer)", 
+        "prefix": [
+            [
+                "hkg02", 
+                "sng01", 
+                "syd01"
+            ]
+        ]
+    }, 
     "linode": {
         "argc": 2, 
         "domain": "http://speedtest.{0}.linode.com/100MB-{1}.bin", 
