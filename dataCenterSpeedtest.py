@@ -37,8 +37,7 @@ def getValidResponse(dataCenterUrl):
                                 timeout=5.0,
                                 redirect=False)
     if response.status != 200:
-        print("无法从真实测速服务器上下载测试文件,跳过...")
-        raise Exception(response)
+        raise Exception("无法从真实测速服务器上下载测试文件,跳过...")
     return response
 
 
@@ -75,7 +74,7 @@ def getDataCenterSpeed(dataCenterUrl):
         print("超时,测试下一个数据中心.")
     except Exception as e:
         print('\n')
-        print(repr(e))
+        print("发生错误:",str(e))
     print('\n')
     return [downloadTimeout * downloadSpeedRefreshRate, dataNow]
 
