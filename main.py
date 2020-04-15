@@ -1,4 +1,8 @@
-﻿import eventlet
+﻿import sys
+import codecs
+sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
+
+import eventlet
 
 eventlet.monkey_patch()
 
