@@ -292,6 +292,32 @@
             ]
         ]
     }, 
+    "ultravps": {
+        "argc": 1, 
+        "domain": "http://lg.{0}.ultravps.eu/100MB.test", 
+        "idc": "ultravps", 
+        "localized_data_center": [
+            "荷兰 北荷兰省 哈勒姆", 
+            "摩尔多瓦 基希讷乌", 
+            "德国 北莱茵-威斯特法伦州 杜塞尔多夫", 
+            "美国 德克萨斯州 达拉斯", 
+            "英国 伦敦", 
+            "美国 加利福尼亚州 洛杉矶", 
+            "立陶宛 希奥利艾县希 奥利艾"
+        ], 
+        "localized_idc": "Ultravps", 
+        "prefix": [
+            [
+                "ams.nl", 
+                "kiv.md", 
+                "dus.de", 
+                "dal.us", 
+                "lon.uk", 
+                "lax.us", 
+                "sqq.lt"
+            ]
+        ]
+    }, 
     "vir": {
         "argc": 1, 
         "domain": "http://{0}.lg.virmach.com/100MB.test", 
