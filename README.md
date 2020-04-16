@@ -29,5 +29,10 @@
 | Vultr | 澳大利亚 新南威尔士州 悉尼 | 29.52KB/s  | SYD-AU-ping.vultr.com    |
 
 ## 安装及使用
-
+### MacOS用户如遇print错误，请在main.py开头添加如下代码
+```
+import sys
+import codecs
+sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
+```
 [DataCenterSpeedtest-cli Wiki](https://github.com/Spedoske/DataCenterSpeedtest-cli/wiki/%E6%96%B0%E6%89%8B%E4%B8%8A%E8%B7%AF)
