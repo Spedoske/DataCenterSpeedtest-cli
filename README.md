@@ -30,7 +30,7 @@
 
 ## 安装及使用
 ### MacOS用户如遇print错误，请在main.py开头添加如下代码
-```
+```python
 import sys
 import codecs
 sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
