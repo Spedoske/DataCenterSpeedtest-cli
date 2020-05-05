@@ -1,399 +1,3054 @@
-{
-    "aws": {
-        "argc": 1, 
-        "domain": "http://{0}-ec2.cloudharmony.net/probe/test100mb.bin", 
-        "idc": "aws", 
-        "localized_data_center": [
-            "美国 弗吉尼亚州 阿什本", 
-            "美国 俄亥俄州 都柏林", 
-            "美国 俄亥俄州 都柏林", 
-            "美国 加利福尼亚州 旧金山", 
-            "美国 俄勒冈州 波特兰", 
-            "瑞典 斯德哥尔摩省 斯德哥尔摩", 
-            "加拿大 魁北克省 蒙特利尔", 
-            "德国 黑森州 法兰克福", 
-            "爱尔兰 都柏林郡 都柏林", 
-            "英国 伦敦", 
-            "法国 法兰西岛大区 巴黎", 
-            "瑞典 斯德哥尔摩省 斯德哥尔摩", 
-            "中国 香港", 
-            "日本 东京都 东京", 
-            "韩国 首尔", 
-            "印度 马哈拉施特拉邦 孟买", 
-            "新加坡 新加坡", 
-            "澳大利亚 新南威尔士州 悉尼", 
-            "巴西 巴西", 
-            "巴林 巴林"
+[
+    {
+        "data_centers": [
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "弗吉尼亚州 阿什本", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "107.22.235.245", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://us-east-1-ec2.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "俄亥俄州 都柏林", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "18.224.28.105", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://us-east-2a-ec2.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "俄亥俄州 都柏林", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "18.224.28.114", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://us-east-2b-ec2.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "加利福尼亚州 旧金山", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "50.18.169.82", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://us-west-1-ec2.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "俄勒冈州 波特兰", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "50.112.113.53", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://us-west-2-ec2.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "斯德哥尔摩省 斯德哥尔摩", 
+                    "country": "瑞典"
+                }, 
+                "network_info": {
+                    "ip": "13.53.130.21", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://eu-north-1-ec2.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "魁北克省 蒙特利尔", 
+                    "country": "加拿大"
+                }, 
+                "network_info": {
+                    "ip": "52.60.87.251", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://ca-central-1-ec2.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "黑森州 法兰克福", 
+                    "country": "德国"
+                }, 
+                "network_info": {
+                    "ip": "54.93.197.49", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://eu-central-1-ec2.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "都柏林郡 都柏林", 
+                    "country": "爱尔兰"
+                }, 
+                "network_info": {
+                    "ip": "46.137.161.153", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://eu-west-1-ec2.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "伦敦", 
+                    "country": "英国"
+                }, 
+                "network_info": {
+                    "ip": "52.56.68.77", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://eu-west-2-ec2.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "法兰西岛大区 巴黎", 
+                    "country": "法国"
+                }, 
+                "network_info": {
+                    "ip": "52.47.175.160", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://eu-west-3-ec2.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "香港", 
+                    "country": "中国"
+                }, 
+                "network_info": {
+                    "ip": "18.162.123.249", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://ap-east-1-ec2.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "东京都 东京", 
+                    "country": "日本"
+                }, 
+                "network_info": {
+                    "ip": "52.68.188.243", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://ap-northeast-1-ec2.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "首尔", 
+                    "country": "韩国"
+                }, 
+                "network_info": {
+                    "ip": "52.79.42.205", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://ap-northeast-2-ec2.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "马哈拉施特拉邦 孟买", 
+                    "country": "印度"
+                }, 
+                "network_info": {
+                    "ip": "13.235.74.221", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://ap-south-1-ec2.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "新加坡", 
+                    "country": "新加坡"
+                }, 
+                "network_info": {
+                    "ip": "122.248.239.89", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://ap-southeast-1-ec2.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "新南威尔士州 悉尼", 
+                    "country": "澳大利亚"
+                }, 
+                "network_info": {
+                    "ip": "54.252.94.36", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://ap-southeast-2-ec2.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "圣保罗州 圣保罗", 
+                    "country": "巴西"
+                }, 
+                "network_info": {
+                    "ip": "54.94.224.66", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://sa-east-1-ec2.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "巴林", 
+                    "country": "巴林"
+                }, 
+                "network_info": {
+                    "ip": "157.175.134.0", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://me-south-1-ec2.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }
         ], 
-        "localized_idc": "Amazon Web Services", 
-        "prefix": [
-            [
-                "us-east-1", 
-                "us-east-2a", 
-                "us-east-2b", 
-                "us-west-1", 
-                "us-west-2", 
-                "eu-north-1", 
-                "ca-central-1", 
-                "eu-central-1", 
-                "eu-west-1", 
-                "eu-west-2", 
-                "eu-west-3", 
-                "eu-north-1", 
-                "ap-east-1", 
-                "ap-northeast-1", 
-                "ap-northeast-2", 
-                "ap-south-1", 
-                "ap-southeast-1", 
-                "ap-southeast-2", 
-                "sa-east-1", 
-                "me-south-1"
-            ]
-        ]
+        "idc": "Amazon Web Services", 
+        "idc_abbr": [
+            "aws"
+        ], 
+        "official_website": ""
     }, 
-    "buyvm": {
-        "argc": 1, 
-        "domain": "https://speedtest.{0}.buyvm.net/100MB.test", 
-        "idc": "buyvm", 
-        "localized_data_center": [
-            "美国 内华达州 拉斯维加斯", 
-            "美国 纽约州 纽约", 
-            "卢森堡 卢森堡"
+    {
+        "data_centers": [
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "内华达州 拉斯维加斯", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "209.141.56.135", 
+                    "tcping_port": 443, 
+                    "test_file_link": "https://speedtest.lv.buyvm.net/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "纽约州 纽约", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "198.98.53.31", 
+                    "tcping_port": 443, 
+                    "test_file_link": "https://speedtest.ny.buyvm.net/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "卢森堡", 
+                    "country": "卢森堡"
+                }, 
+                "network_info": {
+                    "ip": "104.244.76.191", 
+                    "tcping_port": 443, 
+                    "test_file_link": "https://speedtest.lu.buyvm.net/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }
         ], 
-        "localized_idc": "Frantech(Buyvm)", 
-        "prefix": [
-            [
-                "lv", 
-                "ny", 
-                "lu"
-            ]
-        ]
+        "idc": "Frantech", 
+        "idc_abbr": [
+            "buyvm"
+        ], 
+        "official_website": ""
     }, 
-    "do": {
-        "argc": 1, 
-        "domain": "http://speedtest-{0}.digitalocean.com/100mb.test", 
-        "idc": "do", 
-        "localized_data_center": [
-            "美国 纽约州 纽约", 
-            "美国 纽约州 纽约", 
-            "美国 纽约州 纽约", 
-            "美国 加利福尼亚州 旧金山", 
-            "美国 加利福尼亚州 旧金山", 
-            "加拿大 安大略省 多伦多", 
-            "英国 伦敦", 
-            "德国 黑森州 法兰克福", 
-            "荷兰 北荷兰省 阿姆斯特丹", 
-            "荷兰 北荷兰省 阿姆斯特丹", 
-            "新加坡 新加坡", 
-            "印度 卡纳塔克邦 班加罗尔"
+    {
+        "data_centers": [
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "纽约州 纽约", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "165.227.194.167", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest-NYC1.digitalocean.com/100mb.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "纽约州 纽约", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "192.241.184.88", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest-NYC2.digitalocean.com/100mb.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "纽约州 纽约", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "174.138.51.137", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest-NYC3.digitalocean.com/100mb.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "加利福尼亚州 旧金山", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "107.170.223.15", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest-SFO1.digitalocean.com/100mb.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "加利福尼亚州 旧金山", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "165.227.29.84", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest-SFO2.digitalocean.com/100mb.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "安大略省 多伦多", 
+                    "country": "加拿大"
+                }, 
+                "network_info": {
+                    "ip": "159.203.57.38", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest-TOR1.digitalocean.com/100mb.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "伦敦", 
+                    "country": "英国"
+                }, 
+                "network_info": {
+                    "ip": "46.101.44.214", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest-LON1.digitalocean.com/100mb.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "黑森州 法兰克福", 
+                    "country": "德国"
+                }, 
+                "network_info": {
+                    "ip": "46.101.218.147", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest-FRA1.digitalocean.com/100mb.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "北荷兰省 阿姆斯特丹", 
+                    "country": "荷兰"
+                }, 
+                "network_info": {
+                    "ip": "188.226.175.227", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest-AMS2.digitalocean.com/100mb.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "北荷兰省 阿姆斯特丹", 
+                    "country": "荷兰"
+                }, 
+                "network_info": {
+                    "ip": "178.62.216.76", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest-AMS3.digitalocean.com/100mb.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "新加坡", 
+                    "country": "新加坡"
+                }, 
+                "network_info": {
+                    "ip": "159.89.192.182", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest-SGP1.digitalocean.com/100mb.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "卡纳塔克邦 班加罗尔", 
+                    "country": "印度"
+                }, 
+                "network_info": {
+                    "ip": "139.59.80.215", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest-BLR1.digitalocean.com/100mb.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }
         ], 
-        "localized_idc": "DigitalOcean", 
-        "prefix": [
-            [
-                "NYC1", 
-                "NYC2", 
-                "NYC3", 
-                "SFO1", 
-                "SFO2", 
-                "TOR1", 
-                "LON1", 
-                "FRA1", 
-                "AMS2", 
-                "AMS3", 
-                "SGP1", 
-                "BLR1"
-            ]
-        ]
+        "idc": "DigitalOcean", 
+        "idc_abbr": [
+            "do"
+        ], 
+        "official_website": ""
     }, 
-    "gcp": {
-        "argc": 1, 
-        "domain": "http://{0}-gce.cloudharmony.net/probe/test100mb.bin", 
-        "idc": "gcp", 
-        "localized_data_center": [
-            "美国 南卡罗来纳州 蒙克斯科纳", 
-            "美国 弗吉尼亚州 阿什本", 
-            "美国 俄勒冈州 达尔斯", 
-            "美国 加利福尼亚州 洛杉矶", 
-            "美国 爱荷华州 康瑟尔布拉夫斯", 
-            "加拿大 魁北克省 蒙特利尔", 
-            "中国 台湾 彰化县", 
-            "中国 香港", 
-            "日本 东京都 东京", 
-            "日本 大阪府 大阪", 
-            "印度 马哈拉施特拉邦 孟买", 
-            "新加坡 新加坡", 
-            "澳大利亚 新南威尔士州 悉尼", 
-            "芬兰 屈米河谷区 哈米纳", 
-            "比利时 瓦隆大区 圣吉斯兰", 
-            "英国 伦敦", 
-            "德国 黑森州 法兰克福", 
-            "荷兰 格罗宁根省 埃姆斯哈文", 
-            "瑞士 苏黎世州 苏黎世", 
-            "巴西 巴西"
+    {
+        "data_centers": [
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "南卡罗来纳州 蒙克斯科纳", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "104.196.28.215", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://us-east1-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "弗吉尼亚州 阿什本", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "35.186.170.131", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://us-east4-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "俄勒冈州 达尔斯", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "104.198.97.125", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://us-west1-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "加利福尼亚州 洛杉矶", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "35.235.68.166", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://us-west2-a-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "爱荷华州 康瑟尔布拉夫斯", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "146.148.104.25", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://us-central1-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "魁北克省 蒙特利尔", 
+                    "country": "加拿大"
+                }, 
+                "network_info": {
+                    "ip": "35.203.16.169", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://northamerica-northeast1-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "台湾 彰化县", 
+                    "country": "中国"
+                }, 
+                "network_info": {
+                    "ip": "104.199.177.203", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://asia-east1-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "香港", 
+                    "country": "中国"
+                }, 
+                "network_info": {
+                    "ip": "35.220.138.87", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://asia-east2-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "东京都 东京", 
+                    "country": "日本"
+                }, 
+                "network_info": {
+                    "ip": "104.198.84.55", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://asia-northeast1-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "大阪府 大阪", 
+                    "country": "日本"
+                }, 
+                "network_info": {
+                    "ip": "34.97.89.58", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://asia-northeast2-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "马哈拉施特拉邦 孟买", 
+                    "country": "印度"
+                }, 
+                "network_info": {
+                    "ip": "35.200.149.33", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://asia-south1-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "新加坡", 
+                    "country": "新加坡"
+                }, 
+                "network_info": {
+                    "ip": "35.186.156.249", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://asia-southeast1-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "新南威尔士州 悉尼", 
+                    "country": "澳大利亚"
+                }, 
+                "network_info": {
+                    "ip": "35.189.9.123", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://australia-southeast1-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "屈米河谷区 哈米纳", 
+                    "country": "芬兰"
+                }, 
+                "network_info": {
+                    "ip": "35.228.235.233", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://europe-north1-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "瓦隆大区 圣吉斯兰", 
+                    "country": "比利时"
+                }, 
+                "network_info": {
+                    "ip": "192.158.31.75", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://europe-west1-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "伦敦", 
+                    "country": "英国"
+                }, 
+                "network_info": {
+                    "ip": "35.242.183.32", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://europe-west2-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "黑森州 法兰克福", 
+                    "country": "德国"
+                }, 
+                "network_info": {
+                    "ip": "35.198.180.141", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://europe-west3-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "格罗宁根省 埃姆斯哈文", 
+                    "country": "荷兰"
+                }, 
+                "network_info": {
+                    "ip": "35.204.242.212", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://europe-west4-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "苏黎世州 苏黎世", 
+                    "country": "瑞士"
+                }, 
+                "network_info": {
+                    "ip": "34.65.229.168", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://europe-west6-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "圣保罗州 圣保罗", 
+                    "country": "巴西"
+                }, 
+                "network_info": {
+                    "ip": "35.198.0.114", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://southamerica-east1-gce.cloudharmony.net/probe/test100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }
         ], 
-        "localized_idc": "Google Cloud Platform", 
-        "prefix": [
-            [
-                "us-east1", 
-                "us-east4", 
-                "us-west1", 
-                "us-west2-a", 
-                "us-central1", 
-                "northamerica-northeast1", 
-                "asia-east1", 
-                "asia-east2", 
-                "asia-northeast1", 
-                "asia-northeast2", 
-                "asia-south1", 
-                "asia-southeast1", 
-                "australia-southeast1", 
-                "europe-north1", 
-                "europe-west1", 
-                "europe-west2", 
-                "europe-west3", 
-                "europe-west4", 
-                "europe-west6", 
-                "southamerica-east1"
-            ]
-        ]
+        "idc": "Google Cloud Platform", 
+        "idc_abbr": [
+            "gcp"
+        ], 
+        "official_website": ""
     }, 
-    "hosthatch": {
-        "argc": 1, 
-        "domain": "{0}", 
-        "idc": "hosthatch", 
-        "localized_data_center": [
-            "荷兰 北荷兰省 阿姆斯特丹", 
-            "瑞典 斯德哥尔摩省 斯德哥尔摩", 
-            "美国 加利福尼亚州 圣何塞", 
-            "美国 新泽西州 锡考克斯", 
-            "奥地利 维也纳州 维也纳", 
-            "挪威 奥斯陆郡 奥斯陆", 
-            "美国 伊利诺伊州 芝加哥", 
-            "澳大利亚 新南威尔士州 悉尼", 
-            "中国 香港"
+    {
+        "data_centers": [
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "北荷兰省 阿姆斯特丹", 
+                    "country": "荷兰"
+                }, 
+                "network_info": {
+                    "ip": "31.220.6.30", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://lg.ams.hosthatch.com/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "斯德哥尔摩省 斯德哥尔摩", 
+                    "country": "瑞典"
+                }, 
+                "network_info": {
+                    "ip": "176.126.70.17", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://lg.sto.hosthatch.com/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "加利福尼亚州 圣何塞", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "107.181.166.10", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://lg.lax.hosthatch.com/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "新泽西州 锡考克斯", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "185.213.26.14", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://lg.ny.hosthatch.com/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "维也纳州 维也纳", 
+                    "country": "奥地利"
+                }, 
+                "network_info": {
+                    "ip": "185.175.59.70", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://lg.vie.hosthatch.com/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "奥斯陆郡 奥斯陆", 
+                    "country": "挪威"
+                }, 
+                "network_info": {
+                    "ip": "185.175.56.60", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://lg.osl.hosthatch.com/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "伊利诺伊州 芝加哥", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "172.107.196.100", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://172.107.196.100/200MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "新南威尔士州 悉尼", 
+                    "country": "澳大利亚"
+                }, 
+                "network_info": {
+                    "ip": "168.1.1.212", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://168.1.1.212/downloads/test100.zip"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "香港", 
+                    "country": "中国"
+                }, 
+                "network_info": {
+                    "ip": "119.81.130.170", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest.hkg02.softlayer.com/downloads/test100.zip"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }
         ], 
-        "localized_idc": "HostHatch", 
-        "prefix": [
-            [
-                "http://lg.ams.hosthatch.com/100MB.test", 
-                "http://lg.sto.hosthatch.com/100MB.test", 
-                "http://lg.lax.hosthatch.com/100MB.test", 
-                "http://lg.ny.hosthatch.com/100MB.test", 
-                "http://lg.vie.hosthatch.com/100MB.test", 
-                "http://lg.osl.hosthatch.com/100MB.test", 
-                "http://172.107.196.100/200MB.test", 
-                "http://168.1.1.212/downloads/test100.zip", 
-                "http://speedtest.hkg02.softlayer.com/downloads/test100.zip"
-            ]
-        ]
+        "idc": "HostHatch", 
+        "idc_abbr": [
+            "hosthatch"
+        ], 
+        "official_website": ""
     }, 
-    "hostus": {
-        "argc": 1, 
-        "domain": "http://{0}-lg.hostus.us/100MB.test", 
-        "idc": "hostus", 
-        "localized_data_center": [
-            "荷兰 北荷兰省 阿姆斯特丹", 
-            "英国 伦敦", 
-            "美国 北卡罗来纳州 夏洛特", 
-            "美国 乔治亚州 亚特兰大", 
-            "美国 德克萨斯州 达拉斯", 
-            "美国 加利福尼亚州 洛杉矶", 
-            "美国 弗吉尼亚州 阿什本"
+    {
+        "data_centers": [
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "北荷兰省 阿姆斯特丹", 
+                    "country": "荷兰"
+                }, 
+                "network_info": {
+                    "ip": "185.185.40.2", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://ams-lg.hostus.us/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "伦敦", 
+                    "country": "英国"
+                }, 
+                "network_info": {
+                    "ip": "83.143.116.6", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://lon-lg.hostus.us/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "北卡罗来纳州 夏洛特", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "162.245.216.243", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://clt-lg.hostus.us/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "乔治亚州 亚特兰大", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "45.58.56.3", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://atl-lg.hostus.us/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "德克萨斯州 达拉斯", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "104.128.239.2", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://dal-lg.hostus.us/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "加利福尼亚州 洛杉矶", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "216.189.149.3", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://la-lg.hostus.us/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "弗吉尼亚州 阿什本", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "216.189.157.2", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://wdc-lg.hostus.us/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "香港", 
+                    "country": "中国"
+                }, 
+                "network_info": {
+                    "ip": "119.81.130.170", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest.hkg02.softlayer.com/downloads/test100.zip"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "新加坡", 
+                    "country": "新加坡"
+                }, 
+                "network_info": {
+                    "ip": "119.81.28.170", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest.sng01.softlayer.com/downloads/test100.zip"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "新南威尔士州 悉尼", 
+                    "country": "澳大利亚"
+                }, 
+                "network_info": {
+                    "ip": "168.1.1.212", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest.syd01.softlayer.com/downloads/test100.zip"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }
         ], 
-        "localized_idc": "HostUS", 
-        "prefix": [
-            [
-                "ams", 
-                "lon", 
-                "clt", 
-                "atl", 
-                "dal", 
-                "la", 
-                "wdc"
-            ]
-        ]
+        "idc": "HostUS", 
+        "idc_abbr": [
+            "hostus"
+        ], 
+        "official_website": ""
     }, 
-    "hostus-softlayer": {
-        "argc": 1, 
-        "domain": "http://speedtest.{0}.softlayer.com/downloads/test100.zip", 
-        "idc": "hostus-softlayer", 
-        "localized_data_center": [
-            "中国 香港", 
-            "新加坡 新加坡", 
-            "澳大利亚 新南威尔士州 悉尼"
+    {
+        "data_centers": [
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "新泽西州 纽瓦克", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "50.116.57.237", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest.newark.linode.com/100MB-newark.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "乔治亚州 亚特兰大", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "50.116.39.117", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest.atlanta.linode.com/100MB-atlanta.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "德克萨斯州 达拉斯", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "50.116.25.154", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest.dallas.linode.com/100MB-dallas.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "加利福尼亚州 费利蒙", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "50.116.14.9", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest.fremont.linode.com/100MB-fremont.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "安大略省 多伦多", 
+                    "country": "加拿大"
+                }, 
+                "network_info": {
+                    "ip": "172.105.30.21", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest.toronto1.linode.com/100MB-toronto.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "黑森州 法兰克福", 
+                    "country": "德国"
+                }, 
+                "network_info": {
+                    "ip": "139.162.130.8", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest.frankfurt.linode.com/100MB-frankfurt.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "伦敦", 
+                    "country": "英国"
+                }, 
+                "network_info": {
+                    "ip": "176.58.107.39", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest.london.linode.com/100MB-london.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "新加坡", 
+                    "country": "新加坡"
+                }, 
+                "network_info": {
+                    "ip": "139.162.23.4", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest.singapore.linode.com/100MB-singapore.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "东京都 品川区", 
+                    "country": "日本"
+                }, 
+                "network_info": {
+                    "ip": "139.162.65.37", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest.tokyo2.linode.com/100MB-tokyo2.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "马哈拉施特拉邦 孟买", 
+                    "country": "印度"
+                }, 
+                "network_info": {
+                    "ip": "172.105.33.31", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://speedtest.mumbai1.linode.com/100MB-mumbai.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }
         ], 
-        "localized_idc": "HostUS(Softlayer)", 
-        "prefix": [
-            [
-                "hkg02", 
-                "sng01", 
-                "syd01"
-            ]
-        ]
+        "idc": "Linode", 
+        "idc_abbr": [
+            "linode"
+        ], 
+        "official_website": ""
     }, 
-    "linode": {
-        "argc": 2, 
-        "domain": "http://speedtest.{0}.linode.com/100MB-{1}.bin", 
-        "idc": "linode", 
-        "localized_data_center": [
-            "美国 新泽西州 纽瓦克", 
-            "美国 德克萨斯州 达拉斯", 
-            "美国 加利福尼亚州 费利蒙", 
-            "加拿大 安大略省 多伦多", 
-            "德国 黑森州 法兰克福", 
-            "英国 伦敦", 
-            "新加坡 新加坡", 
-            "日本 东京都 品川区", 
-            "印度 马哈拉施特拉邦 孟买"
+    {
+        "data_centers": [
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "新泽西州 皮斯卡特维", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "104.243.42.233", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://lgny.nexusbytes.com/1000mb.test.zip"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "佛罗里达州 迈阿密", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "104.238.204.5", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://lgmi.nexusbytes.com/1000mb.test.zip"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "加利福尼亚州 洛杉矶", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "172.96.160.138", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://lgla.nexusbytes.com/1000mb.test.zip"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "巴伐利亚州 纽伦堡", 
+                    "country": "德国"
+                }, 
+                "network_info": {
+                    "ip": "78.47.39.81", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://lgger.nexusbytes.com/1000mb.test.zip"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }
         ], 
-        "localized_idc": "Linode", 
-        "prefix": [
-            [
-                "newark", 
-                "dallas", 
-                "fremont", 
-                "toronto1", 
-                "frankfurt", 
-                "london", 
-                "singapore", 
-                "tokyo2", 
-                "mumbai1"
-            ], 
-            [
-                "newark", 
-                "dallas", 
-                "fremont", 
-                "toronto", 
-                "frankfurt", 
-                "london", 
-                "singapore", 
-                "tokyo2", 
-                "mumbai"
-            ]
-        ]
+        "idc": "Nexus Bytes", 
+        "idc_abbr": [
+            "nexusbytes"
+        ], 
+        "official_website": ""
     }, 
-    "nexusbytes": {
-        "argc": 1, 
-        "domain": "http://lg{0}.nexusbytes.com/1000mb.test.zip", 
-        "idc": "nexusbytes", 
-        "localized_data_center": [
-            "美国 新泽西州 皮斯卡特维", 
-            "美国 佛罗里达州 迈阿密", 
-            "美国 加利福尼亚州 洛杉矶", 
-            "德国 巴伐利亚州 纽伦堡"
+    {
+        "data_centers": [
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "佛罗里达州 迈阿密", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "173.44.32.10", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://repos.mia.lax-noc.com/speedtests/100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "乔治亚州 亚特兰大", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "104.223.90.5", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://repos.atl.lax-noc.com/speedtests/100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "新泽西州 锡考克斯", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "23.226.128.10", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://repos.ewr.lax-noc.com/speedtests/100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "华盛顿州 西雅图", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "173.205.92.235", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://repos.sea.lax-noc.com/speedtests/100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "北荷兰省 阿姆斯特丹", 
+                    "country": "荷兰"
+                }, 
+                "network_info": {
+                    "ip": "161.129.64.235", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://repos.ams.lax-noc.com/speedtests/100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "加利福尼亚州 洛杉矶", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "198.55.111.5", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://repos.lax-noc.com/speedtests/100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "德克萨斯州 达拉斯", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "96.44.142.5", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://www.dal01.quadranet.com/speedtests/100mb.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }
         ], 
-        "localized_idc": "Nexus Bytes", 
-        "prefix": [
-            [
-                "ny", 
-                "mi", 
-                "la", 
-                "ger"
-            ]
-        ]
+        "idc": "Quadra Net", 
+        "idc_abbr": [
+            "qn"
+        ], 
+        "official_website": ""
     }, 
-    "ultravps": {
-        "argc": 1, 
-        "domain": "http://lg.{0}.ultravps.eu/100MB.test", 
-        "idc": "ultravps", 
-        "localized_data_center": [
-            "荷兰 北荷兰省 哈勒姆", 
-            "摩尔多瓦 基希讷乌", 
-            "德国 北莱茵-威斯特法伦州 杜塞尔多夫", 
-            "美国 德克萨斯州 达拉斯", 
-            "英国 伦敦", 
-            "美国 加利福尼亚州 洛杉矶", 
-            "立陶宛 希奥利艾县希 奥利艾"
+    {
+        "data_centers": [
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "北荷兰省 哈勒姆", 
+                    "country": "荷兰"
+                }, 
+                "network_info": {
+                    "ip": "185.45.112.15", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://lg.ams.nl.ultravps.eu/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "基希讷乌", 
+                    "country": "摩尔多瓦"
+                }, 
+                "network_info": {
+                    "ip": "185.177.151.4", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://lg.kiv.md.ultravps.eu/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "北莱茵－威斯特法伦州 杜塞尔多夫", 
+                    "country": "德国"
+                }, 
+                "network_info": {
+                    "ip": "130.255.76.147", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://lg.dus.de.ultravps.eu/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "德克萨斯州 达拉斯", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "172.107.84.6", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://lg.dal.us.ultravps.eu/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "伦敦", 
+                    "country": "英国"
+                }, 
+                "network_info": {
+                    "ip": "185.177.148.4", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://lg.lon.uk.ultravps.eu/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "加利福尼亚州 洛杉矶", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "69.12.89.3", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://lg.lax.us.ultravps.eu/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "希奥利艾县 希奥利艾", 
+                    "country": "立陶宛"
+                }, 
+                "network_info": {
+                    "ip": "185.177.150.4", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://lg.sqq.lt.ultravps.eu/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }
         ], 
-        "localized_idc": "Ultravps", 
-        "prefix": [
-            [
-                "ams.nl", 
-                "kiv.md", 
-                "dus.de", 
-                "dal.us", 
-                "lon.uk", 
-                "lax.us", 
-                "sqq.lt"
-            ]
-        ]
+        "idc": "Ultravps", 
+        "idc_abbr": [
+            "ultravps"
+        ], 
+        "official_website": ""
     }, 
-    "vir": {
-        "argc": 1, 
-        "domain": "http://{0}.lg.virmach.com/100MB.test", 
-        "idc": "vir", 
-        "localized_data_center": [
-            "美国 加利福尼亚州 洛杉矶", 
-            "德国 黑森州 法兰克福", 
-            "荷兰 北荷兰省 阿姆斯特丹", 
-            "美国 纽约州 布法罗", 
-            "美国 新泽西州 皮斯卡特维", 
-            "美国 德克萨斯州 达拉斯", 
-            "美国 亚利桑那州 凤凰城", 
-            "美国 加利福尼亚州 洛杉矶", 
-            "美国 伊利诺伊州 芝加哥", 
-            "美国 华盛顿州 西雅图", 
-            "美国 乔治亚州 亚特兰大", 
-            "美国 加利福尼亚州 圣何塞"
+    {
+        "data_centers": [
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "加利福尼亚州 洛杉矶", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "107.172.246.38", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://la.lg.virmach.com/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "黑森州 法兰克福", 
+                    "country": "德国"
+                }, 
+                "network_info": {
+                    "ip": "50.3.68.2", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://ffm.lg.virmach.com/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "北荷兰省 阿姆斯特丹", 
+                    "country": "荷兰"
+                }, 
+                "network_info": {
+                    "ip": "104.206.240.6", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://ams.lg.virmach.com/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "纽约州 布法罗", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "192.227.227.194", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://ny.lg.virmach.com/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "新泽西州 皮斯卡特维", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "198.46.189.4", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://nj.lg.virmach.com/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "德克萨斯州 达拉斯", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "172.245.210.3", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://dal.lg.virmach.com/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "亚利桑那州 凤凰城", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "173.213.69.188", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://phx.lg.virmach.com/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "加利福尼亚州 洛杉矶", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "45.43.7.43", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://filtered-la.lg.virmach.com/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "伊利诺伊州 芝加哥", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "172.245.86.17", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://chi.lg.virmach.com/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "华盛顿州 西雅图", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "107.174.241.229", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://sea.lg.virmach.com/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "乔治亚州 亚特兰大", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "23.94.94.166", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://atl.lg.virmach.com/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "加利福尼亚州 圣何塞", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "107.172.103.136", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://sj.lg.virmach.com/100MB.test"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }
         ], 
-        "localized_idc": "VirMach", 
-        "prefix": [
-            [
-                "la", 
-                "ffm", 
-                "ams", 
-                "ny", 
-                "nj", 
-                "dal", 
-                "phx", 
-                "filtered-la", 
-                "chi", 
-                "sea", 
-                "atl", 
-                "sj"
-            ]
-        ]
+        "idc": "VirMach", 
+        "idc_abbr": [
+            "vir"
+        ], 
+        "official_website": ""
     }, 
-    "vultr": {
-        "argc": 1, 
-        "domain": "http://{0}-ping.vultr.com/vultr.com.100MB.bin", 
-        "idc": "vultr", 
-        "localized_data_center": [
-            "美国 新泽西州 皮斯卡特维", 
-            "美国 伊利诺伊州 芝加哥", 
-            "美国 乔治亚州 亚特兰大", 
-            "美国 佛罗里达州 迈阿密", 
-            "美国 德克萨斯州 达拉斯", 
-            "美国 加利福尼亚州 圣何塞", 
-            "美国 华盛顿州 西雅图", 
-            "加拿大 安大略省 多伦多", 
-            "德国 黑森州 法兰克福", 
-            "荷兰 北荷兰省 阿姆斯特丹", 
-            "法国 法兰西岛大区 巴黎", 
-            "英国 伦敦", 
-            "澳大利亚 新南威尔士州 悉尼", 
-            "新加坡 新加坡", 
-            "日本 东京都 东京"
+    {
+        "data_centers": [
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "新泽西州 皮斯卡特维", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "108.61.149.182", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://NJ-US-ping.vultr.com/vultr.com.100MB.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "伊利诺伊州 芝加哥", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "107.191.51.12", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://IL-US-ping.vultr.com/vultr.com.100MB.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "乔治亚州 亚特兰大", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "108.61.193.166", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://GA-US-ping.vultr.com/vultr.com.100MB.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "佛罗里达州 迈阿密", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "104.156.244.232", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://FL-US-ping.vultr.com/vultr.com.100MB.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "德克萨斯州 达拉斯", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "108.61.224.175", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://TX-US-ping.vultr.com/vultr.com.100MB.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "加利福尼亚州 圣何塞", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "104.156.230.107", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://SJO-CA-US-ping.vultr.com/vultr.com.100MB.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "华盛顿州 西雅图", 
+                    "country": "美国"
+                }, 
+                "network_info": {
+                    "ip": "108.61.194.105", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://WA-US-ping.vultr.com/vultr.com.100MB.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "安大略省 多伦多", 
+                    "country": "加拿大"
+                }, 
+                "network_info": {
+                    "ip": "149.248.50.81", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://TOR-CA-ping.vultr.com/vultr.com.100MB.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "黑森州 法兰克福", 
+                    "country": "德国"
+                }, 
+                "network_info": {
+                    "ip": "108.61.210.117", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://FRA-DE-ping.vultr.com/vultr.com.100MB.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "北荷兰省 阿姆斯特丹", 
+                    "country": "荷兰"
+                }, 
+                "network_info": {
+                    "ip": "108.61.198.102", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://AMS-NL-ping.vultr.com/vultr.com.100MB.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "法兰西岛大区 巴黎", 
+                    "country": "法国"
+                }, 
+                "network_info": {
+                    "ip": "108.61.209.127", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://PAR-FR-ping.vultr.com/vultr.com.100MB.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "伦敦", 
+                    "country": "英国"
+                }, 
+                "network_info": {
+                    "ip": "108.61.196.101", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://LON-GB-ping.vultr.com/vultr.com.100MB.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "新南威尔士州 悉尼", 
+                    "country": "澳大利亚"
+                }, 
+                "network_info": {
+                    "ip": "108.61.212.117", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://SYD-AU-ping.vultr.com/vultr.com.100MB.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "新加坡", 
+                    "country": "新加坡"
+                }, 
+                "network_info": {
+                    "ip": "45.32.100.168", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://SGP-ping.vultr.com/vultr.com.100MB.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "东京都 东京", 
+                    "country": "日本"
+                }, 
+                "network_info": {
+                    "ip": "108.61.201.151", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://HND-JP-ping.vultr.com/vultr.com.100MB.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
+            }
         ], 
-        "localized_idc": "Vultr", 
-        "prefix": [
-            [
-                "NJ-US", 
-                "IL-US", 
-                "GA-US", 
-                "FL-US", 
-                "TX-US", 
-                "SJO-CA-US", 
-                "WA-US", 
-                "TOR-CA", 
-                "FRA-DE", 
-                "AMS-NL", 
-                "PAR-FR", 
-                "LON-GB", 
-                "SYD-AU", 
-                "SGP", 
-                "HND-JP"
-            ]
-        ]
+        "idc": "Vultr", 
+        "idc_abbr": [
+            "vultr"
+        ], 
+        "official_website": ""
     }
-}
+]
