@@ -1,4 +1,4 @@
-import socket, json, sqlite3, os, sys
+import socket, json, sqlite3, os, sys, requests
 import os
 from ctypes import *
 unit = ["KB/s", "MB/s", "GB/s"]
@@ -125,7 +125,7 @@ def generateIDCTuple(idc,dataCenter):
             sys.exit(1)
     if "tcping_port" not in dataCenter["network_info"]:
         if canDownload:
-             dataCenter["network_info"]["tcping_port"] = 80 if dataCenter["network_info"]["test_file_link"][5]==':' else 443
+             dataCenter["network_info"]["tcping_port"] = 80 if dataCenter["network_info"]["test_file_link"][4]==':' else 443
         else:
             canTcping = False
     dataCenter["conf"]={}

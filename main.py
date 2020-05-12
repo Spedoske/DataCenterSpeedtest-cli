@@ -1,3 +1,7 @@
+﻿import eventlet
+
+eventlet.monkey_patch()
+
 import argparse,util,dataCenterSpeedtest,sys
 import prettytable as pt
 
@@ -101,7 +105,7 @@ def handleList():
     for listArg in args.list:
         listArgs.append(ListMap[listArg])
     listArgs.sort()
-    results = cursor.execute('SELECT * FROM data_centers '+args.search+" "+args.order).fetchall()
+    results = cursor.execute('SELECT *,CASE WHEN ping_received+ping_loss=1 THEN 0.0 ELSE (CAST(ping_loss as REAL)/(ping_received+ping_loss)) END as ping_loss_rate FROM data_centers '+args.search+" "+args.order).fetchall()
     searchTable = pt.PrettyTable()
     fieldNames = []
     for listArg in listArgs:

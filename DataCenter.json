@@ -3043,6 +3043,29 @@
                 "speed_status": {
                     "download_speed": 0
                 }
+            }, 
+            {
+                "conf": {
+                    "enable_download_test": true, 
+                    "enable_tcping_test": true
+                }, 
+                "geo_info": {
+                    "city": "首尔", 
+                    "country": "韩国"
+                }, 
+                "network_info": {
+                    "ip": "141.164.34.61", 
+                    "tcping_port": 80, 
+                    "test_file_link": "http://sel-kor-ping.vultr.com/vultr.com.100MB.bin"
+                }, 
+                "ping_status": {
+                    "ping_loss": 0, 
+                    "ping_received": 0, 
+                    "ping_time": 0.0
+                }, 
+                "speed_status": {
+                    "download_speed": 0
+                }
             }
         ], 
         "idc": "Vultr", 
