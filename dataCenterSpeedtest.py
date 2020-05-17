@@ -12,6 +12,7 @@ downloadMaxRetryCount = 20  #运营商劫持重试次数
 urllib3.disable_warnings()
 http = urllib3.PoolManager()
 
+
 def getNewSpeed(timePrev, dataPrev, dataNow, timeNow):
     timeGap = (timeNow - timePrev) / downloadSpeedRefreshRate
     downloadedData = dataNow - dataPrev
@@ -45,6 +46,7 @@ def getDataCenterSpeed(dataCenterUrl):
     dataPrev = 0
     speedLast = "0KB/s"
     dataNow = 0
+    withError = False
     try:
         response = getValidResponse(dataCenterUrl)
         contentSize = int(response.headers['content-length'])
@@ -68,18 +70,19 @@ def getDataCenterSpeed(dataCenterUrl):
             if not data:
                 print("\r下载进度：100%% - %s       " % (speedLast), end=" ")
             print('\n\n')
-            return [(timeNow - timeBegin)/downloadSpeedRefreshRate, dataNow]
+            return [(timeNow - timeBegin) / downloadSpeedRefreshRate, dataNow]
     except eventlet.Timeout:
         print('\n')
         print("超时,测试下一个数据中心.")
     except Exception as e:
         print('\n')
-        print("发生错误:",str(e))
+        print("发生错误:", str(e))
+        withError = True
     print('\n')
-    return [time.time()-timeBeginForError, dataNow]
+    return [time.time() - timeBeginForError, dataNow, withError]
 
 
-def measureDownloadSpeed(idc_name,datacenter_name, url, speedtestIndex,
+def measureDownloadSpeed(idc_name, datacenter_name, url, speedtestIndex,
                          searchListCount):
     localized_idc = idc_name
     localized_data_center = datacenter_name
