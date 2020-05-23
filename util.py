@@ -1,5 +1,4 @@
 import socket, json, sqlite3, os, sys, requests
-import os
 from ctypes import *
 unit = ["KB/s", "MB/s", "GB/s"]
 
